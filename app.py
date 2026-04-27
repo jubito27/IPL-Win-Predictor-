@@ -3,7 +3,7 @@ import pandas as pd
 import numpy as np
 import pickle
 
-model = pickle.load(open(r'C:\Users\Abhishek sharma\Artificial Intelligence\Machine Learning\Projects\IPl Win Probability\pipeline.pkl' , 'rb'))
+model = pickle.load(open('pipeline.pkl' , 'rb'))
 
 # df = pickle.load(open(r'C:\Users\Abhishek sharma\Artificial Intelligence\Machine Learning\Projects\IPl Win Probability\dataframe.pkl' , 'rb'))
 
