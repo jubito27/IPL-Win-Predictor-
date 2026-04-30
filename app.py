@@ -11,7 +11,7 @@ model = pickle.load(open('pipeline.pkl' , 'rb'))
 
 st.set_page_config(page_title="IPL win predictor -First Inning",page_icon="🧊",initial_sidebar_state="expanded")
 st.title("IPL Win Predictor - First Innings")
-df = pd.read_csv(r'C:\Users\Abhishek sharma\Artificial Intelligence\Machine Learning\Projects\IPl Win Probability\matches.csv')
+df = pd.read_csv('matches.csv')
 
 team1 = st.selectbox("Choose First Team" , options=['Choose from options'] + list(df['team1'].unique()))
 team2 = st.selectbox("Choose Secoond Team" , options=['Choose from options'] + list(df['team2'].unique()))
